@@ -6,9 +6,10 @@ implemented in PyTorch using [MambaOut](https://github.com/yuweihao/MambaOut?tab
 
 
 ---
-
+![Figure3](assets/Figure_3.png)
 Figure 3: Recurrence plots (RP) of typical signal sequences. Left: Time-domain signal sequence diagram; Right: Corresponding RP. Each row shows a representative signal and its corresponding recurrence plot. From top to bottom: \textbf{np1}: Constant function ($y=1$); \textbf{np2}: Linear function ($y = x$); \textbf{np3}: Sine function ($y = \sin(x)$); \textbf{np4}: Periodic window function (alternating between 0 and 1); \textbf{np5}: Modulated sine function ($y = \sin(100x) \cdot \sin(20x)$). }
 
+![Figure4](assets/Figure_4.png)
 Figure 4: Visualization of time series data and the corresponding RP images under weak
 and strong augmentation: (a) Wind, (b) Man-made, (c) Excavation. The red dashed
 vertical lines validate the correlation between the images and the characteristics of the time
@@ -16,6 +17,9 @@ series signals, demonstrating how the augmentation techniques affect the represe
 of the data. Weak augmentation preserves the overall structure and global context, while
 strong augmentation emphasizes local features and high-frequency details.
 
+![Figure7a](assets/Figure_7a.png)
+![Figure7b](assets/Figure_7b.png)
+![Figure7c](assets/Figure_7c.png)
 Figure 7: Diagram of the D-SE-MambaOut architecture. The STEM module converts
 raw pixels into primary semantic features, implementing 4× spatial downsampling with
 two 3 × 3 convolutions (stride=2), expanding the number of channels from 3 to 64. The
